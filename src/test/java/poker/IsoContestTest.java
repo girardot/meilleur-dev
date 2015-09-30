@@ -1,28 +1,13 @@
 package poker;
 
-import org.junit.After;
-import org.junit.Before;
+import common.AbstractTest;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 
 import static org.fest.assertions.api.Assertions.assertThat;
 
-public class IsoContestTest {
-
-    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-
-    @Before
-    public void setUp() throws Exception {
-        System.setOut(new PrintStream(outContent));
-    }
-
-    @After
-    public void tearDown() throws Exception {
-        System.setOut(null);
-    }
+public class IsoContestTest extends AbstractTest {
 
     @Test
     public void should_return_money_at_the_end_of_the_game() throws Exception {
