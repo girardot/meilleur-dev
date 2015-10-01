@@ -29,9 +29,9 @@ public abstract class AbstractTest {
         List<String> lines= Files.readAllLines(Paths.get(outputFilename), Charset.forName("UTF-8"));
         String result = "";
         for (String line : lines) {
-            result += line;
+            result += line + "\r\n";
         }
-        return result;
+        return result.trim();
     }
 
 }
