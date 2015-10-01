@@ -1,4 +1,4 @@
-package tags;
+package salesforce;
 
 import common.AbstractTest;
 import junitparams.JUnitParamsRunner;
@@ -15,14 +15,14 @@ public class IsoContestTest extends AbstractTest {
 
     @Test
     @Parameters({
-            "src/test/resources/tags/input1.txt,src/test/resources/tags/output1.txt",
-            "src/test/resources/tags/input2.txt,src/test/resources/tags/output2.txt"})
-    public void should_test_tags(String inputFileName, String outputFileName) throws Exception {
+            "src/test/resources/salesforce/input1.txt,src/test/resources/salesforce/output1.txt",
+            "src/test/resources/salesforce/input2.txt,src/test/resources/salesforce/output2.txt"})
+    public void should_test_sales_force(String inputFileName, String outputFileName) throws Exception {
         // Given
         System.setIn(new FileInputStream(inputFileName));
 
         // When
-        tags.IsoContest.main(null);
+        salesforce.IsoContest.main(null);
 
         //Then
         assertThat(outContent.toString().trim()).isEqualTo(readOutputFile(outputFileName));

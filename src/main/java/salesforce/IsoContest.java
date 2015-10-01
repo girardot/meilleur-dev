@@ -1,15 +1,23 @@
 package salesforce;
 
-import java.util.*;
+/*******
+ * Read input from System.in
+ * Use System.out.println to ouput your result.
+ * Use:
+ * IsoContestBase.localEcho(variable)
+ * to display variable in a dedicated area.
+ ****/
+
+import java.util.Scanner;
 
 public class IsoContest {
-    public static void main( String[] argv ) throws Exception {
-        String  line;
+    public static void main(String[] argv) throws Exception {
+        String line;
         Scanner sc = new Scanner(System.in);
-        while(sc.hasNextLine()) {
+        while (sc.hasNextLine()) {
             line = sc.nextLine();
-			/* Lisez les données et effectuez votre traitement */
+            /* Lisez les données et effectuez votre traitement */
         }
-	/* Vous pouvez aussi effectuer votre traitement une fois que vous avez lu toutes les données.*/
+    /* Vous pouvez aussi effectuer votre traitement une fois que vous avez lu toutes les données.*/
     }
 }

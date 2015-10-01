@@ -1,0 +1,12 @@
+10
+irlande;etas-unis;angleterre;italie;autriche;allemagne;belgique;suisse;france;espagne
+bruce;dunlap;sodales;-33-124218826;belgique
+summer;stephenson;nullam;+44-0876736426;etas-unis
+summer;stephenson;nullam;+44-0876736426;etas-unis
+aidan;conrad;blandit;+44-0876736426;suisse
+warren;baird;arcu;33-52149663;suisse
+denise;pitts;tortor;+1-110895526;italie
+keith;baird;ultrices;+1-8547412367;france
+denise;pitts;nullam;+33-151065426;italie
+priscilla;pitts;nullam;+33-151065426;angleterre
+priscilla;pitts;nullam;+33-151065426;angleterre

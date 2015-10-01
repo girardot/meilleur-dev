@@ -1,0 +1,8 @@
+6
+suisse;italie;espagne;etas-unis
+bruce;stephenson;arcu;+33-151065426;belgique
+josiah;baird;convallis;+33-151065426;etas-unis
+avram;valentine;donec;-33-145878826;france
+ryan;dunlap;sodales;33-52149663;italie
+john;copeland;ultrices;+1-8547412367;irlande
+john;copeland;ultrices;+1-8547412367;irlande

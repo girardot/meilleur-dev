@@ -17,7 +17,7 @@ public class IsoContestTest extends AbstractTest {
     @Parameters({
             "src/test/resources/poker/input1.txt,src/test/resources/poker/output1.txt",
             "src/test/resources/poker/input2.txt,src/test/resources/poker/output2.txt"})
-    public void should_return_money_at_the_end_of_the_game(String inputFileName, String outputFileName) throws Exception {
+    public void should_test_poker(String inputFileName, String outputFileName) throws Exception {
         // Given
         System.setIn(new FileInputStream(inputFileName));
 
