@@ -48,7 +48,7 @@ public class IsoContest {
     }
 
     private static boolean validatePhoneNumber(String phone) {
-        final String PHONE_REGEX = "^\\+[0-9]{1-3}\\-[0-9]{9,11}$";
+        final String PHONE_REGEX = "^\\+[0-9]{1,3}\\-[0-9]{9,11}$";
         final Pattern phonePattern = Pattern.compile(PHONE_REGEX);
         Matcher matcher = phonePattern.matcher(phone);
         return matcher.matches();
