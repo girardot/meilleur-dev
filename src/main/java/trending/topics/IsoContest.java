@@ -20,7 +20,7 @@ public class IsoContest {
 
         String trendingTopic = null;
 
-        for (int p = 0; p < (hashTagNumber - 60); p++) {
+        for (int p = 0; p <= (hashTagNumber - 60); p++) {
             HashMap<String, Integer> countHashTags = new HashMap<>();
             for (int j = 0; j < 60; j++) {
                 String hashtag = hashtags.get(j + p);
