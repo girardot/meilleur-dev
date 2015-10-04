@@ -36,25 +36,24 @@ public class IsoContest {
             rallongesByName.get(rallongeName).add(rallongeLength);
         }
 
-        Integer result = 0;
+        Integer totalLength = 0;
         if (rallongesByName.get("M-F") != null) {
             for (Integer length : rallongesByName.get("M-F")) {
-                result += length;
+                totalLength += length;
             }
         }
 
         if (rallongesByName.get("M-M") != null && rallongesByName.get("F-F") != null) {
-            int communNumber = Math.min(rallongesByName.get("F-F").size(), rallongesByName.get("M-M").size());
-
             Collections.sort(rallongesByName.get("F-F"), COMPARE_BY_REVERSE_ORDER);
             Collections.sort(rallongesByName.get("M-M"), COMPARE_BY_REVERSE_ORDER);
 
-            for (int i = 0; i < communNumber; i++) {
-                result += rallongesByName.get("M-M").get(i) + rallongesByName.get("F-F").get(i);
+            int commonNumber = Math.min(rallongesByName.get("F-F").size(), rallongesByName.get("M-M").size());
+            for (int i = 0; i < commonNumber; i++) {
+                totalLength += rallongesByName.get("M-M").get(i) + rallongesByName.get("F-F").get(i);
             }
 
         }
-        System.out.println(result);
+        System.out.println(totalLength);
     }
 
 }
