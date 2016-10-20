@@ -1,0 +1,5 @@
+animation 14
+sciences 13
+international 12
+campus 10
+culture 9
