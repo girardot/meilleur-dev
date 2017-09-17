@@ -1,4 +1,4 @@
-package exo2;
+package com.isograd.exercice.exo1;
 
 import common.AbstractTest;
 import junitparams.JUnitParamsRunner;
@@ -15,14 +15,14 @@ public class IsoContestTest extends AbstractTest {
 
     @Test
     @Parameters({
-            "src/test/resources/exo2/input1.txt,src/test/resources/exo2/output1.txt",
-            "src/test/resources/exo2/input2.txt,src/test/resources/exo2/output2.txt"})
+            "src/test/resources/com.isograd.exercice.exo1/input1.txt,src/test/resources/com.isograd.exercice.exo1/output1.txt",
+            "src/test/resources/com.isograd.exercice.exo1/input2.txt,src/test/resources/com.isograd.exercice.exo1/output2.txt"})
     public void should_test_exo(String inputFileName, String outputFileName) throws Exception {
         // Given
         System.setIn(new FileInputStream(inputFileName));
 
         // When
-        exo2.IsoContest.main(null);
+        com.isograd.exercice.exo1.IsoContest.main(null);
 
         //Then
         assertThat(outContent.toString().trim()).isEqualTo(readOutputFile(outputFileName));

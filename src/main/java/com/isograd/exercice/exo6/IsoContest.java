@@ -1,4 +1,4 @@
-package exo2;
+package com.isograd.exercice.exo6;
 
 /*******
  * Read input from System.in
@@ -9,6 +9,8 @@ package exo2;
  ***/
 
 import java.util.Scanner;
+import java.util.*;
+
 
 public class IsoContest {
     public static void main(String[] argv) throws Exception {
