@@ -16,6 +16,7 @@ import static java.lang.String.format;
 import static java.lang.String.valueOf;
 
 public class IsoContest {
+
     public static void main(String[] argv) throws Exception {
         String line;
         Scanner sc = new Scanner(System.in);
